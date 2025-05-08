@@ -1,0 +1,48 @@
+# Target folder (output build)
+target/
+
+# If using Rustup
+.rustup/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.code-workspace
+
+# Backup and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Protobuf generated files (if generated into src or proto folder)
+*.pb.rs
+
+# CMake cache/output
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# Windows specific
+*.exe
+*.pdb
+*.dll
+
+# Mac/Linux specific
+*.dSYM/
+*.so
+*.dylib
+
+# Node/npm (if frontend is included)
+node_modules/
+
+# dotenv files (if used)
+.env
+.env.*
