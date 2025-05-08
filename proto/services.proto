@@ -9,7 +9,7 @@ service PaymentService {
 
 // Service for checking transaction history
 service TransactionService {
-    rpc GetTransactionHistory(TransactionRequest) returns (stream.TransactionResponse);
+    rpc GetTransactionHistory(TransactionRequest) returns (stream TransactionResponse);
 }
 
 // Service for chatting with a customer service bot
@@ -18,7 +18,7 @@ service ChatService {
 }
 
 message PaymentRequest {
-    String user_id = 1;
+    string user_id = 1;
     double amount = 2;
 }
 
@@ -27,7 +27,7 @@ message PaymentResponse {
 }
 
 message TransactionRequest {
-    String user_id = 1;
+    string user_id = 1;
 }
 
 message TransactionResponse {
